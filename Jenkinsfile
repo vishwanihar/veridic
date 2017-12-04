@@ -5,10 +5,6 @@ node {
     try {
         stage ('Clone') {
         	checkout scm
-			sh "git checkout vishwanihar"
-			"git add ."
-			"git commit -m "changes committed"
-			"git push origin vishwanihar"
         }
         stage ('Build') {
         	sh "echo 'shell scripts to build project...'"
